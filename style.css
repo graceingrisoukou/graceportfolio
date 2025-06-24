@@ -1,0 +1,60 @@
+.escalier-section {
+  background: linear-gradient(135deg, #6e00ff, #009dff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.escalier-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.marche {
+  position: absolute;
+  background-color: white;
+  color: #1e1e2f;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+#marche1 {
+  bottom: 50px;
+  left: 100px;
+}
+
+#marche2 {
+  bottom: 150px;
+  left: 300px;
+}
+
+.fille {
+  position: absolute;
+  bottom: 55px;
+  left: 60px;
+  width: 60px;
+  height: 120px;
+  background: linear-gradient(to bottom, #f9c74f 40%, #577590 40%);
+  border-radius: 20px;
+  transition: all 0.8s ease;
+}
+
+.fille::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: #f9844a;
+  border-radius: 50%;
+}

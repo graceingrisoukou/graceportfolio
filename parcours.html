@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon parcours – Grâce Soukou</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 50px;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e1f5fe, #1976d2);
+  transition: background 1s ease-in-out;
+}
+
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+    h1, h2 {
+      color: #1e88e5;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    }
+    .btn-retour {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+    p, li {
+      font-size: 1.1rem;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js" style="position: fixed; z-index: -1; width: 100%; height: 100%; top: 0; left: 0;"></div>
+
+  <div class="container mt-5">
+
+    <h1 class="mb-4 text-center">📚 Mon parcours</h1>
+
+    <div class="section">
+      <h2>Un parcours riche et engagé</h2>
+      <p>💫 Tout a commencé en Côte d’Ivoire, où j’ai obtenu en 2021 un baccalauréat scientifique.</p>
+      <p>👩🏽‍🔬 Dès le lycée, je me suis donné pour défi de réussir dans un domaine encore peu investi par les femmes, et de prouver que je pouvais exceller dans les sciences.</p>
+      <p>🎯 Cette ambition m’a conduite à intégrer une classe préparatoire MPSI à l’INPHB.</p>
+      <p>Pendant ces deux années intenses, j’ai développé :</p>
+      <ul>
+        <li>💪🏽 une résilience à toute épreuve,</li>
+        <li>🧘🏽‍♀️ une grande gestion du stress,</li>
+        <li>❤️➗ une confirmation de ma passion pour les maths.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>✈️ Un choix réfléchi</h2>
+      <p>🎓 J’ai choisi la Sorbonne pour ses opportunités et la qualité de sa formation, en adéquation avec mes objectifs :</p>
+      <ul>
+        <li>➡️ devenir data scientist ou travailler en finance 📊💼</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧠 Mes ambitions</h2>
+      <p>Je vise à intégrer une grande école d’ingénieur ou de commerce en France pour :</p>
+      <ul>
+        <li>renforcer mes compétences en data science et finance,</li>
+        <li>maîtriser le traitement et la modélisation des données 🔍📈,</li>
+        <li>me surpasser dans chaque projet 💯</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>💻 Une passion qui dépasse les études</h2>
+      <p>J’aime :</p>
+      <ul>
+        <li>explorer des concepts complexes 🧩,</li>
+        <li>découvrir de nouvelles méthodes 🧠,</li>
+        <li>admirer la logique et la rigueur des mathématiques.</li>
+      </ul>
+      <p>Cette fascination me pousse à approfondir mes connaissances et à chercher des applications concrètes.</p>
+    </div>
+
+    <div class="section">
+      <h2>🤝 Mon entourage et mes qualités</h2>
+      <p>Mes camarades me décrivent comme :</p>
+      <ul>
+        <li>🛠️ travailleuse,</li>
+        <li>💪🏽 courageuse,</li>
+        <li>🧘🏽‍♀️ raisonnable.</li>
+      </ul>
+      <p>👩🏽‍🏫 Je dois beaucoup à la prépa : rigueur, logique, détermination sont devenues des réflexes.</p>
+    </div>
+
+    <div class="section">
+      <h2>🌟 En résumé</h2>
+      <ul>
+        <li>❤️➗ Passionnée par les mathématiques,</li>
+        <li>🌍 Motivée pour contribuer à la société,</li>
+        <li>📈💼 Ambitieuse dans la data science ou la finance.</li>
+      </ul>
+      <p>🙌🏽 Avec détermination, curiosité et engagement, je suis convaincue que je réaliserai mes objectifs.</p>
+    </div>
+  </div>
+
+  <!-- Bouton de retour -->
+  <a href="index.html" class="btn btn-outline-primary btn-retour">⬅ Retour</a>
+  <script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / docHeight;
+
+    // Dégradé clair → sombre selon le scroll
+    const r = Math.floor(225 - scrollPercent * 100); // R diminue
+    const g = Math.floor(245 - scrollPercent * 120); // G diminue
+    const b = Math.floor(254 - scrollPercent * 180); // B diminue
+
+    document.body.style.background = `linear-gradient(to bottom, rgb(${r},${g},${b}), #0d47a1)`;
+  });
+</script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.1 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.1,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: { onhover: { enable: false }, onclick: { enable: false } }
+    },
+    retina_detect: true
+  });
+</script>
+<!-- Script pour le fond dynamique au scroll -->
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / docHeight;
+
+    const r = Math.floor(225 - scrollPercent * 100);
+    const g = Math.floor(245 - scrollPercent * 120);
+    const b = Math.floor(254 - scrollPercent * 180);
+
+    document.body.style.background = `linear-gradient(to bottom, rgb(${r},${g},${b}), #0d47a1)`;
+  });
+</script>
+
+<!-- Ne PAS oublier ce script si tu utilises Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / docHeight;
+
+    // On passe d’un bleu clair à un bleu foncé (plus contrasté)
+    const startColor = [240, 248, 255]; // Bleu clair (AliceBlue)
+    const endColor = [13, 71, 161];     // Bleu foncé
+
+    const r = Math.floor(startColor[0] + (endColor[0] - startColor[0]) * scrollPercent);
+    const g = Math.floor(startColor[1] + (endColor[1] - startColor[1]) * scrollPercent);
+    const b = Math.floor(startColor[2] + (endColor[2] - startColor[2]) * scrollPercent);
+
+    document.body.style.background = `linear-gradient(to bottom, rgb(${r},${g},${b}), #000c40)`;
+  });
+</script>
+
+
+</body>
+</html>

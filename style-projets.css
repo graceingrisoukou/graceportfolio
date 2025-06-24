@@ -1,0 +1,184 @@
+/* Fond général avec dégradé */
+body {
+  background: linear-gradient(to bottom, #f8f9fa, #e0e0e0, #d0d0d0, #bcbcbc);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Style du header */
+header.bg-gradient-top {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+/* Titres principaux */
+h1, h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Sections de projet */
+.project-block {
+  background-color: white;
+  border-left: 6px solid #007bff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  margin-bottom: 40px;
+}
+
+/* Sous-titres */
+.project-block h5 {
+  margin-top: 25px;
+  color: #0056b3;
+}
+
+/* Listes à puces dans les sections */
+.project-block ul {
+  padding-left: 20px;
+}
+
+.project-block ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Boutons Bootstrap animés */
+.btn-outline-light {
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  background-color: #343a40;
+  color: white;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .project-block {
+    padding: 20px;
+  }
+}
+/* Fond animé doux avec emojis statistiques/musique */
+.sae-background {
+  position: relative;
+  background: linear-gradient(120deg, #e3f2fd 30%, #fce4ec 70%);
+  overflow: hidden;
+}
+
+/* Emoji décoratifs flottants */
+.sae-background::before {
+  content: "🎵 📊 🎶 📈 🎧 📝 📉";
+  font-size: 5rem;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  opacity: 0.06;
+  animation: floatEmoji 20s infinite linear;
+  white-space: nowrap;
+}
+
+@keyframes floatEmoji {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+/* Image élargie avec effet carte */
+.image-illustree {
+  width: 100%;                /* Elle prendra toute la largeur de son conteneur */
+  max-width: 650px;           /* MAIS pas plus de 650px pour garder une bonne lisibilité */
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.image-illustree:hover {
+  transform: scale(1.03);     /* Effet zoom au survol */
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Conteneur du fond animé */
+.fond-emoji-anime {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.07;
+}
+
+/* Emoji individuel */
+.emoji-flottant {
+  position: absolute;
+  font-size: 3rem;
+  animation: flotter 15s infinite linear;
+}
+
+/* Animation des emojis */
+@keyframes flotter {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Bloc 1 : largeur modérée */
+.sae-bloc-1 {
+  max-width: 70%;
+  margin: 60px auto;
+}
+
+/* Bloc 2 : un peu plus large */
+.sae-bloc-2 {
+  max-width: 85%;
+  margin: 50px auto;
+}
+
+/* Bloc 3 : occupe tout l'écran (entonnoir final) */
+.sae-bloc-3 {
+  width: 100vw;
+  margin: 0;
+  border-radius: 0;
+  border-left: none;
+  box-shadow: none;
+  padding: 50px 60px;
+  background: linear-gradient(120deg, #fff3e0 30%, #ffe0b2 70%);
+}
+.btn-lg {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.image-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.image-zoom:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+

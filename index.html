@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio de Grâce Soukou</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="elements.css">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Grâce Soukou</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
+ <!-- Accueil -->
+<header id="accueil" class="container-fluid d-flex align-items-center text-white fade-section"
+  style="min-height: 80vh;
+         background-image: url('images/fond-data-grace.png');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         padding: 40px 20px;">
+  
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5">
+
+    <!-- Texte à gauche avec effet flou -->
+    <div class="text-center text-lg-start mb-5 mb-lg-0" style="
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 600px;">
+      
+      <h1 class="display-2 fw-bold text-white">
+        Grâce <span style="color: #ffd54f;">SOUKOU</span>
+      </h1>
+      <p class="lead text-white mt-3 fs-4">
+        🎓 Étudiante en science des données <br>
+        Passionnée par les mathématiques et les projets concrets
+      </p>
+    </div>
+
+    <!-- Image à droite -->
+    <div class="text-center">
+      <img src="images/grace.png" alt="Photo de Grâce Soukou"
+        style="border-radius: 20px; width: 450px; height: 450px; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.4); border: 6px solid white;">
+    </div>
+
+  </div>
+</header>
+
+
+  <!-- À propos -->
+ <header id="apropos" class="text-white">
+  <div id="carouselAccueil" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-caption">
+          <div class="bg-blur">
+            <h1 class="display-5 fw-bold">QUI SUIS-JE ?</h1>
+            <p class="lead">
+              Étudiante passionnée par l'univers captivant de la science des données, Grace incarne l'équilibre parfait entre expertise académique et expérience pratique.
+              Ayant déjà parcouru deux années exigeantes en classes préparatoires, elle a forgé un esprit d'analyse affûté, une résilience à toute épreuve face au stress,
+              et une aptitude remarquable au travail collaboratif.
+            </p>
+            <div class="carousel-btn">
+              <a href="parcours.html">Découvrir mon parcours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-caption">
+          <div class="bg-blur">
+            <h1 class="display-5 fw-bold">Un parcours académique riche 📚</h1>
+            <p class="lead">
+              Actuellement inscrite à l'Université Sorbonne Paris Nord, Grace a consolidé ses acquis tout en élargissant son horizon de compétences.
+              Sa soif insatiable de connaissances l'a conduite à explorer de nouvelles méthodologies, à maîtriser des outils technologiques de pointe,
+              et à perfectionner son art de la résolution de problèmes complexes.
+            </p>
+            <div class="carousel-btn">
+              <a href="parcours.html">Découvrir mon parcours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-caption">
+          <div class="bg-blur">
+            <h1 class="display-5 fw-bold">Une candidate ambitieuse 🚀</h1>
+            <p class="lead">
+              Déterminée à transformer sa passion en carrière, Grace aspire à obtenir un contrat d'apprentissage dans le domaine de la data.
+              Son profil unique, mêlant rigueur scientifique et créativité, constitue un atout précieux pour toute entreprise souhaitant innover
+              et prospérer dans un monde de plus en plus axé sur les données.
+            </p>
+            <div class="carousel-btn">
+              <a href="parcours.html">Découvrir mon parcours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="carousel-caption">
+          <div class="bg-blur">
+            <h1 class="display-5 fw-bold">Une vision novatrice ✨</h1>
+            <p class="lead">
+              Ce qui distingue Grace, c'est sa capacité à transcender les limites conventionnelles et à apporter une vision novatrice à chaque projet.
+              Recruteurs dans le domaine de la data, saisissez l'opportunité de collaborer avec une jeune femme déterminée à tracer son chemin vers l'excellence.
+              Avec Grace à vos côtés, l'avenir de votre entreprise s'annonce prometteur et empreint d'innovation.
+            </p>
+            <div class="carousel-btn">
+              <a href="parcours.html">Découvrir mon parcours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flèches -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccueil" data-bs-slide="prev">
+      <span class="carousel-arrow">&lt;</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAccueil" data-bs-slide="next">
+      <span class="carousel-arrow">&gt;</span>
+    </button>
+  </div>
+</header>
+
+   
+<!-- Projets -->
+<section id="projets" class="py-5 fade-section" style="
+  background-image: url('images/fondprojet.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+">
+  <div class="container text-center">
+    <h2 class="mb-4"><i class="fas fa-chart-line"></i> Projets Académiques</h2>
+
+    <!-- Texte d’introduction stylisé -->
+    <div class="intro-box p-4 mb-5 mx-auto" style="max-width: 800px; background: #f8f9fa; border-left: 5px solid #1e88e5; border-radius: 10px;">
+      <p class="mb-0" style="font-size: 1.15rem;">
+        Je vais vous présenter quelques projets académiques, appelés <strong>SAÉ</strong>, que j’ai réalisés au cours de mes deux premières années de BUT.
+        Cliquez sur la marche correspondant à l’année pour découvrir les projets concrets menés en <strong>BUT 1</strong> et <strong>BUT 2</strong>.
+      </p>
+    </div>
+
+    <!-- Escalier avec boutons BUT 1 et BUT 2 -->
+    <div class="d-flex justify-content-center align-items-end gap-4 mb-4">
+      <a href="page1.html" class="btn stair-button stair-but1 fw-bold text-white">Projet BUT 1</a>
+      <a href="page 2.html" class="btn stair-button stair-but2 fw-bold text-white">Projet BUT 2</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-dark text-white">
+    <p>© 2025 Grâce Soukou | Portfolio créatif et data-driven 💫</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Projet Professionnel -->
+<section id="projet-pro" class="container my-5">
+  <div class="row g-5 p-4 rounded shadow-lg"
+       style="background: linear-gradient(120deg, #e3f2fd 30%, #bbdefb 70%);">
+    <div class="col-12">
+      <h2 class="fw-bold text-center mb-4">💼 Projet Professionnel – Stage à la CPAM</h2>
+      <p class="text-center mb-4" style="font-size: 1.1rem;">
+        Lors de mon stage à la CPAM du Val-de-Marne, j'ai développé un tableau de bord Power BI interactif pour le contrôle de gestion,
+        permettant le suivi de tâches, la visualisation de KPIs et la production de rapports automatisés. Voici ci-dessous un aperçu des différentes vues du tableau.
+      </p>
+
+     
+  <div class="container my-5">
+  <div class="row g-4 justify-content-center">
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/synthese.png" alt="Synthèse" class="img-fluid image-zoom-final">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/taches.png" alt="Tâches" class="img-fluid image-zoom-final">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/alerte.png" alt="Alerte" class="img-fluid image-zoom-final">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/dev.png" alt="Développement" class="img-fluid image-zoom-final">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/rapport.png" alt="Rapport" class="img-fluid image-zoom-final">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 text-center">
+      <img src="images/note.png" alt="Note de conjoncture" class="img-fluid image-zoom-final">
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- Footer avec adresse mail -->
+<footer class="text-center p-4 bg-dark text-white">
+  <p>© 2025 Grâce Soukou | Portfolio créatif et data-driven 💫</p>
+  <p class="mt-2">📧 grace.soukou@univ-paris13.fr</p>
+</footer>
+
+</body>
+</html>
